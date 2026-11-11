@@ -1,7 +1,7 @@
 KERNEL := /home/cmp408/rpisrc/linux
 
 PWD := $(shell pwd)
-obj-m += lkm01.o
+obj-m += ggkm.o
 
 all:
 	make ARCH=arm CROSS_COMPILE=$(CROSS) -C $(KERNEL) M=$(PWD) modules
